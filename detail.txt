@@ -1,0 +1,19 @@
+in postgres shell
+
+create database
+CREATE DATABASE DB_1;
+
+connect database
+\c DB_1;
+
+
+for install mockery
+go get github.com/vektra/mockery/v2@latest
+
+for generate mock
+mockery --all
+
+for specific interface
+mockery --name InterfaceName
+
+mockery --testonly --name InterfaceName
